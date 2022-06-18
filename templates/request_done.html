@@ -20,7 +20,7 @@
                                         <th class="text-center"><span>Title project</span></th>
                                         <th class="text-center"><span>Username user</span></th>
                                         <th class="text-center"><span>Email user</span></th>
-                                        <th class="text-center"><span>State </span></th>
+                                        <th class="text-center"><span>State of request</span></th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -38,11 +38,11 @@
 
                                         <td class="text-center">
                                             {% if request.accepted== True %}
-                                            <span class="user-subheadTrue">ACCETTATO</span>
+                                            <span class="user-subheadTrue">ACCEPTED</span>
                                             {% elif request.refused==True%}
-                                            <span class="user-subhead">rIFIUTATO</span>     
+                                            <span class="user-subhead">REFUSED</span>     
                                             {% else %}
-                                            <span class="user-subhead">IN ATTESA</span>
+                                            <span class="user-subhead">WAITING</span>
                                             {% endif %}
                                         </td>
                                     </tr>
